@@ -9,7 +9,18 @@
 # Converts some string to JSON format, mostly for usage in the DragonRuby toolkit
 class String2JSON
   def initialize
+    aoh
   end
+
+  def string2json(json_string)
+  end
+
+  def array_of_hashes
+  end
+
+  def something
+  end
+
 end
 
 
