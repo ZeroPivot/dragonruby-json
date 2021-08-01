@@ -29,7 +29,7 @@ require 'fileutils'
 #
 
 # Array-of-hashes container
-class AOH
+class AOH 
   def initialize(*args)
     @collection = []
     @path_to_root = nil # we give a default path for some instance object of AOH, to make specifying where a file is to be saved with a bit more ease
