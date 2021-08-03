@@ -30,6 +30,7 @@ require 'fileutils'
 
 # Array-of-hashes container
 class AOH 
+  attr_accessor :collection
   def initialize(*args)
     @collection = []
     @path_to_root = nil # we give a default path for some instance object of AOH, to make specifying where a file is to be saved with a bit more ease
@@ -79,6 +80,7 @@ class AOH
   end
 
   def clear_then_save; end
+
 
   # or nil to get all ---- THIS IS WHERE you may have to make a modification on the return of @collection[id]
   def get_id(id = nil)
