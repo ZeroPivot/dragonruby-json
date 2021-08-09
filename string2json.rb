@@ -34,18 +34,16 @@ end
 #parse_string({ "lol" => 2, "rofl" => "hehe", "hehe" => nil })
 
 
-
-
 database = AOH.new
-100.times do
-   database.add({"nil" => nil, "number" => 2.0, "number2" => "5"})  
+5.times do
+  database.add({"nil" => nil, "number" => 2.0, "number2" => "5", "numArray" => [1, 2] })
 end
 
-puts database.collection.to_s
+#puts database.collection.to_s
 
 json = parse_string(database.collection)
-p json.to_json
-
+json = json.to_json
+puts json
 #parse_string(database.collection_get)
 # rubocop:enable Style/FrozenStringLiteralComment
 # rubocop:enable Layout/EmptyLines
