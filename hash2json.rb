@@ -11,13 +11,13 @@ def hash2json(hash)
 end
 
 
-database = AOH.new
-5.times do
-  database.add({"nil" => nil, "number" => 2.0, "number2" => "5", "numArray" => [1, 2] })
-end
+# database = AOH.new
+#5.times do
+#  database.add({"nil" => nil, "number" => 2.0, "number2" => "5", "numArray" => [1, 2] })
+#end
 
 # puts database.collection.to_s
 
-json = hash2json(database.collection)
+# json = hash2json(database.collection)
 # json = json.to_json
-puts json
+# puts json
