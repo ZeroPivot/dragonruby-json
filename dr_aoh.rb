@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 #	[Written By: ArityWolf - aritywolf@gmail.com] #
-#   Array of hashes; a array wherein each indice's contents is a hash which can contain data. Serialized by Marshal (which is a danger, if you're not careful).
+#   Array of hashes; modified for usage in the DragonRuby.org toolkit
 require 'fileutils'
 # last updated: 2017-12-13
 
@@ -11,7 +11,14 @@ require 'fileutils'
 # A version of the web server used array of hashes algorithm re-implemented for use in the DragonRuby game toolkit
 # Current Progress: 0%
 
+# Current work (8/11/2021 5:15am)
+# *) implement file saving and loding in DragonRuby's load and save format, load_json, etc
+
+
 # TODO:
+#
+#   -2021-Aug-11
+#   * Begin work on implementing AOH for the dragonruby toolkit
 #
 #   -2017-Dec-13
 #   * Implemented reverse_add(hash) -- appends to the front of @collection instead of adding to the back as usual.

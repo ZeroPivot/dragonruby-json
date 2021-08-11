@@ -1,29 +1,15 @@
-require 'json'
+# require 'json'
 require_relative 'aoh'
 
 # Converts some string to JSON format, mostly for usage in the DragonRuby toolkit
-class String2JSON
-  def initialize
-    aoh
-  end
-
-  def string2json(json_string)
-  end
-
-  def array_of_hashes
-  end
-
-  def something
-  end
-end
-
-def parse_string(hash)
+# 2021/8/11 - 7:30am - last update
+def hash2json(hash)
   u_string = hash.to_s
   u_string.gsub! "=>", ":"
   u_string.gsub! '"', '\\"'
   u_string.gsub! "nil", "null"
 end
-# parse_string({ "lol" => 2, "rofl" => "hehe", "hehe" => nil })
+
 
 database = AOH.new
 5.times do
@@ -32,6 +18,6 @@ end
 
 # puts database.collection.to_s
 
-json = parse_string(database.collection)
-json = json.to_json
+json = hash2json(database.collection)
+# json = json.to_json
 puts json
