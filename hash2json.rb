@@ -4,10 +4,11 @@ require_relative 'aoh'
 # Converts some string to JSON format, mostly for usage in the DragonRuby toolkit
 # 2021/8/11 - 7:30am - last update
 def hash2json(hash)
-  u_string = hash.to_s
-  u_string.gsub! "=>", ":"
-  u_string.gsub! '"', '\\"'
-  u_string.gsub! "nil", "null"
+  json_string = hash.to_s
+  json_string.gsub! "=>", ":"
+  json_string.gsub! '"', '\\"'
+  json_string.gsub! "nil", "null"
+  json_string
 end
 
 
