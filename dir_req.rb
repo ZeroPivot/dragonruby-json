@@ -4,6 +4,8 @@
 # with what I understand will be script number complexity in DragonRuby. This aims to reduce my init.rb file
 # to a minimum
 
+
+# Require the ruby files in a single directory, not checking for anything else
 def dir_req(path)
   ruby_files = Dir.glob("#{path}/*.rb")
   ruby_files.each do |file|   
